@@ -86,7 +86,7 @@ export default function PrivacyPolicy() {
                         <p>
                             If you have any questions or concerns about this Privacy Policy, please contact us at:
                             <br />
-                            <a href="mailto:support@wallety.app" className="text-blue-600 dark:text-blue-400 hover:underline">support@wallety.app</a>
+                            <a href="mailto:limnersapp@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">limnersapp@gmail.com</a>
                         </p>
                     </section>
                 </div>
