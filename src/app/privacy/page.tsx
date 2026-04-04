@@ -89,6 +89,11 @@ export default function PrivacyPolicy() {
                             <br />
                             <a href="mailto:limnersapp@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">limnersapp@gmail.com</a>
                         </p>
+                        <p className="mt-4">
+                            <strong>Account Deletion Requests:</strong> If you want to delete your account and all associated data, please use our account deletion form:
+                            <br />
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNgJut79fZ1xzu15HmorXmTdpp6scwMbegTTyAxLv5ue0CjQ/viewform" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Delete My Account</a>
+                        </p>
                     </section>
                 </div>
             </main>
