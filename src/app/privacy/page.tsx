@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
 
                             <p><strong>Financial Data:</strong> Any income, expense, budget, or transaction data you enter is stored locally on your device and synchronized to our secure **Firebase Firestore** cloud servers. This allows seamless data recovery and multi-device synchronization.</p>
 
-                            <p><strong>OCR Data (Receipts):</strong> If you use our receipt scanning feature, your camera is used to capture images of receipts. We use **Tesseract.js** to process these images locally or on-device to extract text. We do not store your raw receipt images on our servers unless you explicitly choose to upload them.</p>
+                            <p><strong>OCR Data (Receipts):</strong> If you use our receipt scanning feature, your camera is used to capture images of receipts, or you can select existing receipt images from your photo library. These images are temporarily sent to **Groq&apos;s Llama 4 AI model** via API for text extraction and expense analysis. Groq processes these images to extract details like amount, date, merchant, and category. **Groq does not store or retain your receipt images** - processing is temporary only. We do not store your raw receipt images on our servers.</p>
 
                             <p><strong>AI Analysis:</strong> To provide smart budget insights, your anonymized financial summaries may be processed by **Groq AI**. This data is used only to generate personalized savings advice and is not used to train global AI models.</p>
                         </div>
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
                             <li><strong>Google AdMob:</strong> We show ads to support the free tier. AdMob may collect device-specific information (like advertising IDs) to show personalized or non-personalized ads.</li>
                             <li><strong>Firebase (by Google):</strong> We use Firebase for authentication, cloud database, and crash reporting to improve app stability.</li>
                             <li><strong>RevenueCat:</strong> Used to manage premium subscriptions and in-app purchases securely.</li>
-                            <li><strong>Groq:</strong> Used for processing AI-driven financial insights.</li>
+                            <li><strong>Groq:</strong> Used for AI-driven financial insights and receipt image processing. For receipt scanning, images are temporarily sent to Groq&apos;s Llama 4 model for OCR and data extraction. Groq does not store or retain receipt images after processing. For financial insights, your anonymized financial summaries are processed to generate personalized savings advice. Groq does not use your data to train global AI models.</li>
                         </ul>
                     </section>
 
@@ -62,6 +62,7 @@ export default function PrivacyPolicy() {
                         <p className="mb-4">The app may request the following permissions:</p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li><strong>Camera:</strong> Required for scanning receipts to auto-log expenses.</li>
+                            <li><strong>Photos / Media Library:</strong> Required for selecting existing receipt images from your gallery for expense tracking.</li>
                             <li><strong>Notifications:</strong> Required for budget alerts, daily reminders, and smart insights.</li>
                             <li><strong>Storage:</strong> Required for exporting financial reports in PDF or CSV format.</li>
                         </ul>
